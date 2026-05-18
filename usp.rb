@@ -5,13 +5,13 @@
 class Usp < Formula
   desc "Universal Sessions Protocol — find any coding session across any AI assistant."
   homepage "https://github.com/hop-top/usp"
-  version "0.1.0-alpha.1"
+  version "0.1.0-alpha.2"
   license "MIT"
 
   on_macos do
     if Hardware::CPU.intel?
-      url "https://github.com/hop-top/usp/releases/download/usp/v0.1.0-alpha.1/usp_0.1.0-alpha.1_darwin_amd64.tar.gz"
-      sha256 "5f41b7afbf2e764e7539f7efb15767992abe4f85f212efeff3361526b415560d"
+      url "https://github.com/hop-top/usp/releases/download/usp/v0.1.0-alpha.2/usp_0.1.0-alpha.2_darwin_amd64.tar.gz"
+      sha256 "55747147ec62649465fe3aabaaa556d2949833d7e3e58c2f04a7a367d7fc9bd2"
 
       define_method(:install) do
         bin.install "usp"
@@ -19,8 +19,8 @@ class Usp < Formula
       end
     end
     if Hardware::CPU.arm?
-      url "https://github.com/hop-top/usp/releases/download/usp/v0.1.0-alpha.1/usp_0.1.0-alpha.1_darwin_arm64.tar.gz"
-      sha256 "d9059fb7d8b7fcdeb40b73d8bbc0f74f3ff595e0c2fa9df4e19d3fa10f3281ac"
+      url "https://github.com/hop-top/usp/releases/download/usp/v0.1.0-alpha.2/usp_0.1.0-alpha.2_darwin_arm64.tar.gz"
+      sha256 "8ad665b159a9e0e281d857f159c910527022b8b949c7e36606dcd0e4190ae36d"
 
       define_method(:install) do
         bin.install "usp"
@@ -31,16 +31,16 @@ class Usp < Formula
 
   on_linux do
     if Hardware::CPU.intel? && Hardware::CPU.is_64_bit?
-      url "https://github.com/hop-top/usp/releases/download/usp/v0.1.0-alpha.1/usp_0.1.0-alpha.1_linux_amd64.tar.gz"
-      sha256 "4b579edc8355a47a85b406bbf4fe755419224cb19f777b6ca2964cf8b0484946"
+      url "https://github.com/hop-top/usp/releases/download/usp/v0.1.0-alpha.2/usp_0.1.0-alpha.2_linux_amd64.tar.gz"
+      sha256 "27dab304771a0b5418cf375fef5d03deaece72c0eebb1a33ee761c8f01b88648"
       define_method(:install) do
         bin.install "usp"
         bin.install "usp-ctxt"
       end
     end
     if Hardware::CPU.arm? && Hardware::CPU.is_64_bit?
-      url "https://github.com/hop-top/usp/releases/download/usp/v0.1.0-alpha.1/usp_0.1.0-alpha.1_linux_arm64.tar.gz"
-      sha256 "80b7cdfd84a0b7e6e3ab843e408ed60401e0706aeffd66afad10bddcd0178cd3"
+      url "https://github.com/hop-top/usp/releases/download/usp/v0.1.0-alpha.2/usp_0.1.0-alpha.2_linux_arm64.tar.gz"
+      sha256 "91976c33301715faaf8acb5fd29b0c517841020e18903f6b2ffcdbc11d03c7f5"
       define_method(:install) do
         bin.install "usp"
         bin.install "usp-ctxt"
