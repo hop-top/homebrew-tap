@@ -11,7 +11,7 @@ class Usp < Formula
   on_macos do
     if Hardware::CPU.intel?
       url "https://github.com/hop-top/usp/releases/download/usp/v0.1.0-alpha.1/usp_0.1.0-alpha.1_darwin_amd64.tar.gz"
-      sha256 "5c89c0ae6a2ba60543a1da4eab2295add0ccb29e598dddca501acad8e0542ec1"
+      sha256 "5f41b7afbf2e764e7539f7efb15767992abe4f85f212efeff3361526b415560d"
 
       define_method(:install) do
         bin.install "usp"
@@ -20,7 +20,7 @@ class Usp < Formula
     end
     if Hardware::CPU.arm?
       url "https://github.com/hop-top/usp/releases/download/usp/v0.1.0-alpha.1/usp_0.1.0-alpha.1_darwin_arm64.tar.gz"
-      sha256 "fbd2cabe96a81542f83268326d5148a6abbb49361b920b3f936ed195df59cb98"
+      sha256 "d9059fb7d8b7fcdeb40b73d8bbc0f74f3ff595e0c2fa9df4e19d3fa10f3281ac"
 
       define_method(:install) do
         bin.install "usp"
@@ -32,7 +32,7 @@ class Usp < Formula
   on_linux do
     if Hardware::CPU.intel? && Hardware::CPU.is_64_bit?
       url "https://github.com/hop-top/usp/releases/download/usp/v0.1.0-alpha.1/usp_0.1.0-alpha.1_linux_amd64.tar.gz"
-      sha256 "173267571996e7ad7ecac69ce6087a9de013478ad34938a87b12914323c8cc86"
+      sha256 "4b579edc8355a47a85b406bbf4fe755419224cb19f777b6ca2964cf8b0484946"
       define_method(:install) do
         bin.install "usp"
         bin.install "usp-ctxt"
@@ -40,7 +40,7 @@ class Usp < Formula
     end
     if Hardware::CPU.arm? && Hardware::CPU.is_64_bit?
       url "https://github.com/hop-top/usp/releases/download/usp/v0.1.0-alpha.1/usp_0.1.0-alpha.1_linux_arm64.tar.gz"
-      sha256 "37be5aefc42b8fb9bdf273bfced68eac203a6638ce36487b1578fc7804ce1f99"
+      sha256 "80b7cdfd84a0b7e6e3ab843e408ed60401e0706aeffd66afad10bddcd0178cd3"
       define_method(:install) do
         bin.install "usp"
         bin.install "usp-ctxt"
